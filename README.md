@@ -1,6 +1,7 @@
 # My Awesome Project
 
 An incredible project that does amazing things.
+
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/MrNeo01/Practice/main)
 ![License](https://img.shields.io/github/license/MrNeo01/Practice)
 
