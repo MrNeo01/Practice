@@ -3,8 +3,8 @@
 An incredible project that does amazing things.
 
 [![License](https://img.shields.io/github/license/MrNeo01/Practice?style=plastic)](https://github.com/MrNeo01/Practice/blob/main/LICENSE)
-![GitHub last commit](https://img.shields.io/github/last-commit/MrNeo01/Practice?style=plastic)
-![GitHub All Releases](https://img.shields.io/github/downloads/MrNeo01/Practice/total?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/MrNeo01/Practice?style=plastic?cacheSeconds=60)
+![GitHub All Releases](https://img.shields.io/github/downloads/MrNeo01/Practice/total?style=plastic?cacheSeconds=60)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/MrNeo01/Practice&title=Views&style=plastic)](https://hits.seeyoufarm.com)
 
 
