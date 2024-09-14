@@ -2,8 +2,11 @@
 
 An incredible project that does amazing things.
 
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/MrNeo01/Practice/main)
-![License](https://img.shields.io/github/license/MrNeo01/Practice)
+[![License](https://img.shields.io/github/license/MrNeo01/Practice?style=plastic)](https://github.com/MrNeo01/Practice/blob/main/LICENSE)
+![GitHub last commit](https://img.shields.io/github/last-commit/MrNeo01/Practice?style=plastic)
+![GitHub All Releases](https://img.shields.io/github/downloads/MrNeo01/Practice/total?style=plastic)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/MrNeo01/Practice&title=Views&style=plastic)](https://hits.seeyoufarm.com)
+
 
 ## Table of Contents
 
