@@ -1,4 +1,5 @@
 # FastGEMF
+![Screenshot of the app](images/logo1.webp)
 
 FastGEMF scalabe  spread process simulator  for small to large scale multi-layer complex networks. You can define mechanistic model with mutiple infleuncer through simple steps and simualte the difussion process over networks.
 
