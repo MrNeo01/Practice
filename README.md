@@ -1,6 +1,6 @@
-# My Awesome Project
+# FastGEMF
 
-An incredible project that does amazing things.
+FastGEMF scalabe  spread process simulator  for small to large scale multi-layer complex networks. You can define mechanistic model with mutiple infleuncer through simple steps and simualte the difussion process over networks.
 
 [![License](https://img.shields.io/github/license/MrNeo01/Practice?style=plastic)](https://github.com/MrNeo01/Practice/blob/main/LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/MrNeo01/Practice?style=plastic?cacheSeconds=60)
