@@ -32,8 +32,32 @@ FastGEMF is scalabe  spread process simulator  for small to large scale multi-la
 
 ## Installation
 
-Instructions on how to install the project.
+FastGEMF can be installed on Linux, macOS, and Windows operating systems. Ensure you have Python and pip installed on your system by following the official pip documentation.
 
+Using PyPI
+To install FastGEMF from the Python Package Index (PyPI), execute the following command in your terminal:
+```sh
+python3 -m pip install fastgemf --user --upgrade
+```
+Using the Source Code Repository
+If you prefer to install the latest version directly from the source, you can use pip to install FastGEMF from GitHub:
+
+```sh
+python3 -m pip install https://github.com/YourGitHubUsername/FastGEMF/archive/main.zip --user --upgrade
+```
+Alternatively, you can clone the repository and install FastGEMF locally:
+
+bash
+Copy code
+```sh
+git clone https://github.com/KSUNetse/FastGEMF.git
+cd FastGEMF
+python3 -m pip install . --user --upgrade
+```
+After installation, you can verify that FastGEMF is correctly installed by running:
+```sh
+python -c "import fastgemf; print(fastgemf.__version__)"
+```
 ## Usage
 
 Instructions on how to use the project.
