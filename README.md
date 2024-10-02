@@ -43,7 +43,7 @@ Using the Source Code Repository
 If you prefer to install the latest version directly from the source, you can use pip to install FastGEMF from GitHub:
 
 ```sh
-python3 -m pip install https://github.com/YourGitHubUsername/FastGEMF/archive/main.zip --user --upgrade
+python3 -m pip install https://github.com/KSUNetse /FastGEMF/archive/main.zip --user --upgrade
 ```
 Alternatively, you can clone the repository and install FastGEMF locally:
 
@@ -59,8 +59,20 @@ After installation, you can verify that FastGEMF is correctly installed by runni
 python -c "import fastgemf; print(fastgemf.__version__)"
 ```
 ## Usage
+`ModelSchema` module enabes user to create any multi-agent mechanistic model. The module can be from `FastGEMF` as:
+```pyhton
+from FastGEMF import ModelSchema 
+```
+Here we define a simple, yet popular `SIR` model. 
+```python
 
-Instructions on how to use the project.
+SIR_model = (ModelSchema(name='SIR') # model name
+    .define_compartment(compartments=["S", "I", "R"]) # the compartments of the model
+    .add_network_layer("layer_1") # Defining the layers' 
+    .add_node_transition(name="recovery", from_state="I", to_state="R", rate="gamma") # Deining node-based transition
+    .add_edge_interaction(name="infection", from_state="S", to_state="I", inducer="I", network_layer="layer_1", rate="beta") # Deining edge-based transition
+)
+```
 
 ## Citation
 
