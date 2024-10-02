@@ -82,13 +82,13 @@ The user can draw  or print the model they defined as:
 SIR_instance.draw_model_graph()
 ```
 Below are two visual representations of the SIR model we defined:
-
 <p align="center">
   <img src="images/sir_node.png" alt="SIR Node Transition" width="60%" />
 <\p>
 <p align="center">
   <img src="images/sir_edge.png" alt="SIR Edge Interaction" width="60%" />
 </p>
+
 
 ## Citation
 
