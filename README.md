@@ -66,7 +66,7 @@ from FastGEMF import ModelSchema
 Here we define a simple, yet popular `SIR` model. 
 ```python
 
-SIR_instance = (ModelSchema(name='SIR') # model name
+SIR_model = (ModelSchema(name='SIR') # model name
     .define_compartment(compartments=["S", "I", "R"]) # the compartments of the model
     .add_network_layer("layer_1") # Defining the layers' 
     .add_node_transition(name="recovery", from_state="I", to_state="R", rate="delta") # Defining node-based transition
@@ -75,11 +75,11 @@ SIR_instance = (ModelSchema(name='SIR') # model name
 ```
 The user can now save the parametric mechanistic model defined in a `yaml` file, as a template for easy future use.
 ```pyhton
-SIR_instance.to_yaml("your_directory\SIR.yaml") # to save the defined model in `your_directory`
+SIR_model.to_yaml("your_directory\SIR.yaml") # to save the defined model in `your_directory`
 ```
 The user can draw  or print the model they defined as:
 ```python
-SIR_instance.draw_model_graph()
+SIR_model.draw_model_graph()
 ```
 Below are two visual representations of the SIR model we defined:
 <p align="center">
@@ -88,14 +88,33 @@ Below are two visual representations of the SIR model we defined:
 <p align="center">
   <img src="images/sir_edge.png" alt="SIR Edge Interaction" width="60%" />
 </p>
-or user can easily print the details ofthe 
+or user can easily print the details  as: 
+  
+```python
+print(SIR_instance)
+#output:
+Model: SIR
+Compartments: S, I, R
+Network Layers: ['layer_1']
+Node-Based Transitions: recovery: I --> R (rate: delta)
+Edge-Based Transitions: infection: S --(I)-> I on layer_1 (rate: beta)
+```
+In the next step, we use `ModelConfiguration` module to assign values to the parameters of the model instane we defined:
+```python
+from FastGEMF import ModelConfiguration
+```python
+si1i2s_instance=(ModelConfiguration(si1i2s_model)
+.add_parameter(beta=.05,delta=.05)
+.get_networks(layer1=network1 ))
+3si1i2s_instance.to_yaml("SI1I2S.yaml")
+print(si1i2s_instance)
+```
 ## Citation
 
 Check out a live demo of the project:
 
 ![Live Demo](images/live_demo.gif)
 
-## Screenshots
 
 ### Home Screen
 
