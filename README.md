@@ -88,8 +88,7 @@ Below are two visual representations of the SIR model we defined:
 <p align="center">
   <img src="images/sir_edge.png" alt="SIR Edge Interaction" width="60%" />
 </p>
-
-
+or user can easily print the details ofthe 
 ## Citation
 
 Check out a live demo of the project:
