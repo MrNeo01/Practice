@@ -103,11 +103,10 @@ In the next step, we use `ModelConfiguration` module to assign values to the par
 ```python
 from FastGEMF import ModelConfiguration
 ```python
-si1i2s_instance=(ModelConfiguration(si1i2s_model)
-.add_parameter(beta=.05,delta=.05)
-.get_networks(layer1=network1 ))
-3si1i2s_instance.to_yaml("SI1I2S.yaml")
-print(si1i2s_instance)
+SIR_instnace=(ModelConfiguration(SIR_model)
+.add_parameter(beta=.05,delta=.05) # set the defined parameters to numeric values
+.get_networks(layer1=network1 )) # passing the network object to model instnace
+SIR_instnace.to_yaml("your_directory\SIR_instance.yaml") # ssaving the instance of the model as a yaml file
 ```
 ## Citation
 
